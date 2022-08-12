@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { IProductDetail } from './entities/product-detail.entity';
+import { IProduct } from './entities/product.entity';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lecture2-master-details';
+  title = 'Master - Details Implementation';
+  
 }
+
+
+

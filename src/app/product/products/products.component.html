@@ -1,0 +1,22 @@
+<div class="row">
+    <table class="table">
+     <thead>
+       <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr *ngFor="let p of products">
+         <td>{{p.Id}}</td>
+         <td>{{p.Title}}</td>
+         <td>{{p.Price}}</td>
+         <td>{{p.Quantity}}</td>
+         <td><button (click)="showDetail(p.Id)"  class="btn btn-info">Details</button></td>
+       </tr>
+     </tbody>
+    </table>
+</div>
